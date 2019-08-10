@@ -36,7 +36,7 @@ section {
 footer .footer-home {
     width: 80%;
     text-align: center;
-    margin: 100px auto
+    margin: 10px auto
 }
 
 .container-home.top .description p a:after,
@@ -125,8 +125,8 @@ td {
 }
 
 .container-home.top .description {
-    margin-top: 232px;
-    width: 50%;
+    margin-top: 5%;
+    /*width: 50%;*/
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -169,18 +169,16 @@ td {
     right: 0
 }
 
-.container-home.top .image {
-    margin-top: 61px;
-    width: 50%;
-    text-align: right;
+.container-home.top .description .image {
+    text-align: center;
     padding: 0;
     box-sizing: border-box
 }
 
 .container-home.top .image img {
-    margin-right: 180px;
-    width: 100%;
-    max-width: 205px
+    /*margin-right: 180px;*/
+    width: 40%;
+    padding-bottom: 3%;
 }
 
 .container-home.above .image {
@@ -449,6 +447,7 @@ ul {
 @media screen and (max-width:576px) {
     .wrapper-home {
         padding: 0
+        text-align:center;
     }
     .container-home.top {
         margin-top: 100px
