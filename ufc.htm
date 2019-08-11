@@ -33,42 +33,61 @@
 
 <body>
   <div class="hero-title robinhood">
-    <h1 class="robihood-title">Merchandise Planning</h1>
+    <h1 class="robihood-title">UFC Data Analytics</h1>
     <p>
-      <i>daVinci-retail provides assortment planning software for retailors in the fashion/clothing industry.</i>
+      <i>Data Analytics platform to source and display real time and historic fighter data.</i>
     </p>
   </div>
-  <img src="./files/img/davinci_intro.png" class="hero-image" alt="Robinhood Header Image">
+  <img src="./files/img/ufc_image_1.png" class="hero-image" alt="Robinhood Header Image">
 
   <div class="project_container">
     <h1>Project</h1>
     <p>
-      The project consisted of desigining and implementing the Next Generation Assortment Planning tool as the company transitioned from downloadable software to a web application. Aside from the assortment planning, the project included building the company's ticketing system where customers can report issues with their product.
+      The project consisted of desigining a full end to end platform that would source large amounts of UFC fighter data,
+      organize the data and display the data in a simple web application. The platform had to built in a way that would
+      handle large data form the past and real time data of an ongoing fight. Aside from the data collection and view,
+      the database had to be designed in a way to allow easy transformation and exportation for analysis.
     </p>
   </div>
 
   <div class="robinhood-container project_container">
-    <h1>Mockups/Prototypes</h1>
+    <h1>System Architecture Overview</h1>
     <p>
-      A few different layout formats were presented to the business team. Preference was given to the "Master-Detail" layout pattern. This pattern consists of a main area, the Master area, where an overview of all data items are viewed. To view deeper level information for a specific item in the Master area, a Detail panel presents details for the selected item. The Master-Detail is a great design pattern for the Merchandise Planning application because it provides an efficient way to navigate large data sets. At any given time, the screen space is only populated with the information that the user is interested in. As a result, scanability is improved, as well as the user's ability to focus on their areas of interest.
+      The system was broken down into subsystems that each handle a specific functionality for the application. A technique called subsystem decomposition was used to break down and identify the subsystem components that make up the whole system. This system decomposition only breaks down the system into basic functions. A second subsystem decomposition is performed to get a more detailed view of how the components will interact. The image below shows the overall architecture.
     </p>
-    <img src="./files/img/davinci_mockup.png" class="center-image inline-image" alt="Robinhood Process Image">
+    <img src="./files/img/ufc_architecture.png" class="center-image inline-image" style="width: 50%;" alt="Robinhood Process Image">
   </div>
 
   <div class="robinhood-container project_container">
     <h1>Flow Chart</h1>
     <p>
-      The flow chart describes the usage and outcomes for each functionality on the user interface. This planning application is very complex and entails a large number of functions. For such a case, a separate flow chart was created for each screen of the application. This allows cleaninless and better readibility of the context. Below is a sample flowchart for the home screen of the application.
+      The flow chart describes the usage and outcomes for each functionality on the user interface. This planning application is very complex and entails a large number of functions. A user flow chart was created for each page of the platform to allow for a smooth user experience.
     </p>
-    <img src="./files/img/davinci_flowchart.png" class="center-image inline-image" alt="Robinhood Process Image">
+    <img src="./ufc_user_flow/uml.png" class="center-image inline-image" alt="Robinhood Process Image">
   </div>
+
+  <div class="robinhood-container project_container">
+    <h1>Database Design</h1>
+    <p>
+      Database Design was the most critical part of the project and several designs and iterations were conducted before deciding on the
+      final design. A complex database design could lead to scaling issues and introduce unnecessary hurdles, thus the design was built
+      with simplicity in mind. Decomposing the subsystems decomposed into a UML class diagram to define interaction between provided a
+      detailed insight into the control flow. Additionally, encapsulation was used to ensure security thorughout database design.
+    </p>
+    <img src="./files/img/ufc_db_design_1.png" class="center-image inline-image" alt="Robinhood Process Image" style="width: 50%;">
+    <img src="./files/img/ufc_db_design_2.png" class="center-image inline-image" alt="Robinhood Process Image" style="width: 50%;">
+    <img src="./files/img/ufc_db_design_3.png" class="center-image inline-image" alt="Robinhood Process Image" style="width: 50%;">
+    <img src="./files/img/ufc_db_design_4.png" class="center-image inline-image" alt="Robinhood Process Image" style="width: 50%;">
+  </div>
+
+
 
   <div class="robinhood-container project_container">
     <h1>Final Design</h1>
     <p>
-      Although no design is final due to constant changes in user needs, we can temporarily call this the final design. Hooray for the iterative design process!
+      The final system was built and deployed on AWS. Although no design is final due to constant changes in user needs, we can temporarily call this the final design. Hooray for the iterative design process!
     </p>
-    <img src="./files/img/davinci_result.png" class="center-image inline-image" alt="Robinhood Process Image">
+    <img src="./files/img/ufc_image_1.png" class="center-image inline-image" alt="Robinhood Process Image">
   </div>
 
 
