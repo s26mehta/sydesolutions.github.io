@@ -450,7 +450,7 @@ ul {
         text-align:center;
     }
     .container-home.top {
-        margin-top: 100px
+        margin-top: 0px
     }
     .container-home.top .description {
         margin-top: 20px;
@@ -489,7 +489,7 @@ ul {
     .container-home.top .image img {
         margin-right: 0;
         width: 100%;
-        max-width: 150px
+        max-width: 300px
     }
     .container-home.above {
         margin: 20px auto
